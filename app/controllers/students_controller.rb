@@ -8,8 +8,9 @@ class StudentsController < ApplicationController
   def show
   end
   def active
-    binding.pry
+
     @student = Student.find(params[:id])
+    @student.active = !@student.active
   #render 'views/students/show.html.erb'
   end
 
