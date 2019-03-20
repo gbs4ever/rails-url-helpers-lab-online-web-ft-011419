@@ -7,7 +7,7 @@ class StudentsController < ApplicationController
 
   def show
   end
-  def active 
+  def active
     @student = Student.find(params[:id])
   #render 'views/students/show.html.erb'
   end
