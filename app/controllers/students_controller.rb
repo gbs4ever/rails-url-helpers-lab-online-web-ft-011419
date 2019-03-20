@@ -8,7 +8,7 @@ class StudentsController < ApplicationController
   def show
   end
   def active
-    binding.pry 
+    binding.pry
     @student = Student.find(params[:id])
   #render 'views/students/show.html.erb'
   end
@@ -17,6 +17,6 @@ class StudentsController < ApplicationController
 
     def set_student
       @student = Student.find(params[:id])
-      
+
     end
 end
